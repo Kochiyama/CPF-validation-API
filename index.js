@@ -9,4 +9,4 @@ server.get("/validate", (req, res) => {
   return res.json(validateCpf(req.body.cpf));
 })
 
-server.listen(4040);
+server.listen(process.env.PORT || 4040);
